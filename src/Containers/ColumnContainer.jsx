@@ -18,7 +18,6 @@ export default class ColumnContainer extends React.Component {
 
   whatName = () => {
     return this.state.names.map(name => {
-      // var currentUserTasks = [];
       let results = this.state.tasks.filter(task => {
         return task.owner === name;
       });
