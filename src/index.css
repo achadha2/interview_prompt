@@ -39,6 +39,18 @@ code {
   align-items: center;
 }
 
+.columnHeader:nth-child(2) {
+  background-color: red;
+  height: 30px;
+  align-items: flex-end;
+}
+
+.columnHeader:nth-child(2n + 0) {
+  background-color: orange;
+  height: 30px;
+  align-items: center;
+}
+
 .task {
   display: flex;
   justify-content: flex-start;

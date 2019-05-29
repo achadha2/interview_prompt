@@ -9,7 +9,12 @@ export default class Column extends React.Component {
 
   addTask = () => {
     let result = window.prompt("hello please add task");
-    this.props.tasks.push(result);
+    this.props.tasks.push({
+      ownerID: this.props.tasks[0].ownerID,
+      owner: this.props.tasks[0].owner,
+      task: result
+    });
+    console.log(this.props);
   };
 
   render() {
