@@ -53,10 +53,21 @@ code {
 
 .task {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-left: 0;
   height: 30px;
   background-color: white;
-  margin-top: 5px;
+  padding-top: 20px;
   padding-left: 5px;
+  height: 60px;
+}
+
+.arrowleft {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.arrowright {
+  cursor: pointer;
+  padding: 20px;
 }
