@@ -5,10 +5,10 @@ export default class Column extends React.Component {
     return this.props.tasks.map(task => {
       if (this.props.owner.id === 1) {
         return (
-          <div className="task">
+          <div className="taskEnd">
             <div>{task.task}</div>
             <div
-              className="arrowright"
+              className="arrow"
               onClick={e => this.props.handleColumnChange(e, task)}
               data-column="1"
             >
@@ -18,9 +18,9 @@ export default class Column extends React.Component {
         );
       } else if (this.props.owner.id === 4) {
         return (
-          <div className="task">
+          <div className="taskEnd">
             <div
-              className="arrowleft"
+              className="arrow"
               onClick={e => this.props.handleColumnChange(e, task)}
               data-column="-1"
             >
@@ -33,7 +33,7 @@ export default class Column extends React.Component {
         return (
           <div className="task">
             <div
-              className="arrowleft"
+              className="arrow"
               onClick={e => this.props.handleColumnChange(e, task)}
               data-column="-1"
             >
@@ -41,7 +41,7 @@ export default class Column extends React.Component {
             </div>
             <div>{task.task}</div>
             <div
-              className="arrowright"
+              className="arrow"
               onClick={e => this.props.handleColumnChange(e, task)}
               data-column="1"
             >
