@@ -54,3 +54,54 @@ function tripCalc(array) {
   }
   return maxValue;
 }
+
+// Lightbulb Problem
+
+function solution(A) {
+  let switches = new Array(A.length + 1).fill(0);
+  let lights = new Array(A.length + 1).fill(0);
+  lights[0] = 1;
+  let counter = 0;
+
+  for (let i = 0; i < A.length; i++) {
+    switches[A[i]] = 1;
+    if (lights[A[i] - 1] === 1) {
+      lights[A[i]] = 1;
+      counter++;
+      for (let x = i; x < A.length && switches[x] === 1; x++) {
+        lights[x] = 1;
+      }
+    }
+
+    // console.log(switches,lights)
+  }
+  return counter;
+}
+
+// Binary Number Problem
+
+function solution(S) {
+  // V odd V--
+  // V even V=V/2
+  // console.log(typeof S.charAt(0))
+  let num = 0;
+  let exp = 0;
+  let counter = 0;
+  for (let i = S.length - 1; i > -1; i--) {
+    if (S.charAt(i) === String(1)) {
+      num += Math.pow(2, exp);
+    }
+    exp++;
+  }
+
+  for (let x = num; x > 0; ) {
+    if (x % 2 === 0) {
+      x = x / 2;
+      counter++;
+    } else {
+      x--;
+      counter++;
+    }
+  }
+  return counter;
+}
