@@ -81,9 +81,6 @@ function solution(A) {
 // Binary Number Problem
 
 function solution(S) {
-  // V odd V--
-  // V even V=V/2
-  // console.log(typeof S.charAt(0))
   let num = 0;
   let exp = 0;
   let counter = 0;
