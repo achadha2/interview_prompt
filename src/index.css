@@ -34,7 +34,7 @@ code {
 }
 
 .columnHeader:nth-child(1) {
-  background-color: #8e6e95;
+  background-color: red;
   height: 30px;
   align-items: center;
 }
