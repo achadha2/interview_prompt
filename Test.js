@@ -72,8 +72,6 @@ function solution(A) {
         lights[x] = 1;
       }
     }
-
-    // console.log(switches,lights)
   }
   return counter;
 }
@@ -94,11 +92,10 @@ function solution(S) {
   for (let x = num; x > 0; ) {
     if (x % 2 === 0) {
       x = x / 2;
-      counter++;
     } else {
       x--;
-      counter++;
     }
+    counter++;
   }
   return counter;
 }
