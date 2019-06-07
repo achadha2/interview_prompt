@@ -80,6 +80,10 @@ code {
   padding: 20px;
 }
 
+.arrow:hover {
+  color: red;
+}
+
 .arrowEnd {
   display: none;
   padding: 20px;
