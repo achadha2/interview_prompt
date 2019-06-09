@@ -74,6 +74,7 @@ export default class Column extends React.Component {
         <div className="columnHeader">{this.props.owner.name}</div>
         <div>{this.renderTasks()}</div>
         <div onClick={this.addTask}>+ Add a card</div>
+        <div> Have a wonderful day</div>
       </div>
     );
   }
